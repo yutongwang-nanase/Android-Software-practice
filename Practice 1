@@ -1,1 +1,55 @@
 
+package com.example.mission1;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private double num1;//输入的第一个数
+    private double num2;//输入的第二个数
+
+    private EditText number1;
+    private EditText number2;
+    //按键1~9
+    private Button zero = null;
+    private Button one = null;
+    private Button two = null;
+    private Button three = null;
+    private Button four = null;
+    private Button five = null;
+    private Button six = null;
+    private Button seven = null;
+    private Button eight = null;
+    private Button nine = null;
+
+    //操作按钮
+    private Button jia = null;
+    private Button jian = null;
+    private Button cheng = null;
+    private Button chu = null;
+    private Button xiaoshudian = null;
+    private Button dengyu = null;
+    private Button sin = null;
+    private Button cos = null;
+    private Button clear = null;
+
+    private String number = "";//保存数字
+    private String numbera = "";//原数字
+    private String act = "";//记录运算符
+    private Boolean flagdot = false;//小数点位
+    private Double result = null;//输出结果
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    }
+}
